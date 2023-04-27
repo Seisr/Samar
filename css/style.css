@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+  line-height: 1.6;
+  color: #636363;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800px;
+  color: black;
+}
+h3 {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 600px;
+  color: #f55f8d;
+}
+
+p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+li {
+  padding: 10px 5px 10px 0;
+  font-size: 20px;
+  list-style: none;
+}
+div {
+  display: block;
+}
+
+button:hover {
+  background-position: right center;
+}
+button {
+  padding: 20px 35px;
+  font-size: 15px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-position: left top;
+  transition: all 0.5s;
+  background-size: 200%;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_content nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_content ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.header_content li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 55px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header_content a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_content span {
+  display: inline-block;
+}
+
+.header_content i {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+/* start */
+
+.start {
+  background-image: url("/img/Samar/pic2.png");
+  background-size: cover;
+  height: 1000px;
+  padding-top: 100px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.start_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.start .start_left {
+  width: 60%;
+}
+
+.start .start_left h3 {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 600px;
+  color: #f55f8d;
+}
+
+.start .start_left p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.start .start_left h1 {
+  padding: 10px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800px;
+  color: black;
+}
+
+.start .start_left li {
+  padding: 10px 5px 10px 0;
+  font-size: 20px;
+  list-style: none;
+}
+
+.start .start_left button {
+  margin-top: 20px;
+  padding: 20px 40px;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  color: white;
+  border: none;
+}
+
+.start .start_left i {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  border-radius: 35px;
+  line-height: 35px;
+  font-size: 24px;
+  font-weight: 900px;
+  margin: 0 10px 0 0;
+  background-size: 200%;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  color: white;
+}
+
+.start .start_right img {
+  max-width: 100%;
+}
+
+.start .start_right {
+  width: 40%;
+}
+
+/* service */
+.service {
+  display: flex;
+  text-align: center;
+  background-image: url("/img/Samar/bg2.png");
+  background-size: cover;
+}
+
+.service_title p:first-child {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 600px;
+  color: #f55f8d;
+}
+
+.service h1 {
+  font-weight: 800px;
+  font-size: 70px;
+  color: black;
+}
+
+.service .service_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service .service_content_item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 45px;
+  border: 3px solid transparent;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
+.service_content_item:hover {
+  transform: translateY(-20px);
+  border-image: url("/img/Samar/br.png") 1 round;
+}
+
+.service .service_content_item img {
+  width: 215px;
+}
+
+/* about  */
+
+.about {
+  margin: 10em 0 0 0;
+  background-image: url("/img/Samar/bg15.png");
+}
+
+.about_content {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+}
+
+.about_left img {
+  border-radius: 0 5em 5em 0;
+  width: 100%;
+}
+
+.about_left {
+  width: 60%;
+  position: absolute;
+  left: -17%;
+}
+
+.about_right {
+  width: 50%;
+}
+
+.about_right i {
+  color: #f55f8d;
+  margin-right: 10px;
+}
+
+.about_right li {
+  font-size: 15px;
+}
+.about_right ul {
+  margin-bottom: 20px;
+}
+/* number  */
+.number {
+  background-image: url("/img/Samar/bg14.png");
+  background-size: cover;
+  padding: 80px;
+  margin-top: 50px;
+}
+
+.number_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.number_item {
+  text-align: center;
+}
+
+.number_item i {
+  padding: 12px;
+  font-size: 40px;
+  border-radius: 50%;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  text-align: center;
+  align-items: center;
+  line-height: normal;
+  width: 25%;
+  line-height: 80px;
+}
+
+.number_item p {
+  font-size: 65px;
+  font-weight: 800;
+  color: #f55f8d;
+  line-height: 1;
+}
+
+.number_item p:last-of-type {
+  color: #262626;
+  font-size: 18px;
+}
+
+/* feature  */
+
+.feature {
+  background-image: url("/img/Samar/bg2.png");
+  background-size: 100%;
+  background-position: center;
+  /* width: 100vw; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 60px;
+}
+
+.feature_content {
+  display: flex;
+}
+
+.feature_content_left {
+  width: 50%;
+}
+
+.feature_content_right {
+  width: 50%;
+}
+
+.feature_content_right img {
+  max-width: 120%;
+  animation: move2 5s infinite;
+}
+
+.f_c_g_bg i {
+  font-size: 70px;
+  color: #f55f8d;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.f_c_g_bg h3 {
+  color: black;
+}
+
+.f_c_g_bg {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
+  padding: 10px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+/* porfolio  */
+
+.porfolio {
+  background-image: url("/img/Samar/bg16.png");
+}
+
+.porf_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  gap: 35px;
+}
+.porf_item:first-child {
+  grid-column: 1 / span 2;
+}
+
+.porf_item:nth-child(5) {
+  grid-column: 1 / span 2;
+}
+
+.porf_item:nth-child(6) {
+  grid-row: 2 / 4;
+  grid-column: 3 /4;
+}
+.porf_item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+}
+
+.porf_title {
+  text-align: center;
+}
+
+/* blog  */
+.blog {
+  background-image: url("/img/Samar/bg16.png");
+  background-size: cover;
+  padding: 40px;
+}
+
+.blog_title {
+  text-align: center;
+}
+
+.blog_content .item h3 {
+  color: black;
+}
+
+.blog_content .item {
+  background: rgba(245, 95, 141, 0.1);
+}
+
+.blog_body {
+  padding: 30px 15px 20px 15px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* footer  */
+.footer_form input {
+  padding: 20px 150px;
+  font-size: 15px;
+  font-weight: 400px;
+  color: #888;
+  background-color: white;
+  flex: 1 1 auto;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid #fff;
+  outline: none;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.footer_form button {
+  border-radius: 2px;
+}
+
+.footer_content {
+  padding: 50px 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.1);
+  background-image: url("/img/Samar/pattern3.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  background-color: #1f343b;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright i {
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact {
+  background-image: url("/img/Samar/bg4.png");
+  display: flex;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0e1b1f;
+  background-size: cover;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  justify-content: space-around;
+}
+
+.contact_item h3 {
+  color: white;
+}
+
+.contact_item a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+@keyframes move2 {
+  0% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+  50% {
+    transform: rotate(-1deg) translate(-2px, -2px);
+  }
+  100% {
+    transform: rotate(1deg) translate(2px, 2px);
+  }
+}
